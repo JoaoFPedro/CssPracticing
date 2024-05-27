@@ -1,9 +1,9 @@
 
 
-.container {
-    
-    background-color: black;
-    
+.container {   
+
+    display: flex;
+    text-align: center;
     padding: 20px;
     border: 5px solid red;
     margin-top: 20px;
