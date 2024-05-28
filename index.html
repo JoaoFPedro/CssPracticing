@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hello World</title>
+</head>
+<body>
+<header>Criar Conta</header>
+<form>
+  <div class="form-row">
+  <label for="fullName">Nome Completo</label>
+  <input class="form-input" id="fullName" type="text" placeholder="Digite seu nome completo" required>
+  </div>
+
+  <div class="form-row">
+    <label for="email">E-mail</label>
+    <input class="form-input" id="email" type="text" placeholder="digite seu E-mail" required>
+  </div>
+  <div class="form-row">
+    <label for="password">Senha</label>
+    <input class="form-input" id="password" type="password" placeholder="digite sua senha" required>
+  </div>
+  <div class="form-row">
+    <label for="birthDate">Data de Nascimento</label>
+    <input class="form-input" id="birthDate" type="date"  required>
+  </div>
+
+  <div class="form-row">
+    <label for="gender">Gênero</label>
+    <select id="gender" name="gender" class="form-input" required>
+      <option value="masculino">Masculino</option>
+      <option value="feminino">Feminino</option>
+      <option value="outro">Outro</option>
+    </select>
+  </div>
+  <div>
+    <input id="privacyTerms" type="checkbox">
+    <label for="privacyTerms">Aceito as politicas de privacidade</label>
+  </div>
+  <div class="form-row">
+    <input type="submit" value="Criar Conta" class="form-button" >
+  </div>
+</form>
+</body>
+</html>
