@@ -7,35 +7,41 @@
     <title>Hello World</title>
 </head>
 <body>
-  <div class="container">
-    <form>
-   <p>Nome Completo</p>
-   <input type="text" placeholder="Digite seu nome" >
-
-   <p>E-mail</p>
-   <input type="text" placeholder="Digite seu nome" >
-
-   <p>Senha</p>
-   <input type="password" placeholder="Digite seu nome" >
-
-   <p>Data de Nascimento</p>
-   <input type="date" placeholder="Digite seu nome" >
-
-   <label for="fruits">Gênero</label>
-        <select id="fruits" name="fruits">
-            <option value="apple">Masculino</option>
-            <option value="banana">Feminino</option>
-            <option value="cherry">Outros</option>
-                   </select>
-  </form>
+<header>Criar Conta</header>
+<form>
+  <div class="form-row">
+  <label for="fullName">Nome Completo</label>
+  <input class="form-input" id="fullName" type="text" placeholder="Digite seu nome completo" required>
   </div>
-  <h2 class="title">Redes Sociais</h2>
-  <div class="social-media">
-<ul >
-    <li> <a class="link" href="https://www.instragram.com">Instagram</a></li>
-    <li ><a  class="link" href="https://www.twiiter.com">Twiiter</a></li>
-    <li> <a class="link" href="https://www.youtube.com">Youtube</a></li>
-</ul>
-</div>
+
+  <div class="form-row">
+    <label for="email">E-mail</label>
+    <input class="form-input" id="email" type="text" placeholder="digite seu E-mail" required>
+  </div>
+  <div class="form-row">
+    <label for="password">Senha</label>
+    <input class="form-input" id="password" type="password" placeholder="digite sua senha" required>
+  </div>
+  <div class="form-row">
+    <label for="birthDate">Data de Nascimento</label>
+    <input class="form-input" id="birthDate" type="date"  required>
+  </div>
+
+  <div class="form-row">
+    <label for="gender">Gênero</label>
+    <select id="gender" name="gender" class="form-input" required>
+      <option value="masculino">Masculino</option>
+      <option value="feminino">Feminino</option>
+      <option value="outro">Outro</option>
+    </select>
+  </div>
+  <div>
+    <input id="privacyTerms" type="checkbox">
+    <label for="privacyTerms">Aceito as politicas de privacidade</label>
+  </div>
+  <div class="form-row">
+    <input type="submit" value="Criar Conta" class="form-button" >
+  </div>
+</form>
 </body>
 </html>
